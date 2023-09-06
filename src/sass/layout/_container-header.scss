@@ -1,0 +1,31 @@
+.container-header{
+    display: flex;
+    justify-content: center;
+    padding: 12px 109px;
+    margin: auto 20px;
+    width: 1280px;
+    gap: 24px;
+    background-color: $black-secondary;
+    border: 1px $black solid;
+}
+
+.header-nav{
+    display: flex;
+}
+
+.header-logo{
+    margin-right: 165px;
+}
+
+.header-list{
+    display: flex;
+    gap: 24px;
+}
+
+.header-list-item{
+    color: $white-primary;
+}
+
+.header-contacts{
+
+}
