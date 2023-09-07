@@ -1,6 +1,7 @@
 .container-header{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 12px 109px;
     margin: auto 20px;
     width: 1280px;
@@ -23,9 +24,17 @@
 }
 
 .header-list-item{
-    color: $white-primary;
+    color: $white-secondary;
 }
 
 .header-contacts{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 32px;
+    width: 193px;
+    border: 1px $white-primary solid;
+    border-radius: 50px;
+    color: $white-primary;
+    text-transform: uppercase;
 }
