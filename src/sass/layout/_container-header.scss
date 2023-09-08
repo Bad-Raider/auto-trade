@@ -1,0 +1,48 @@
+.container-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 109px;
+    margin: 0 auto 0;
+    width: 1280px;
+    gap: 24px;
+    background-color: $black-primary;
+    border: 1px $black solid;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    display: flex;
+    margin-right: 165px;
+}
+
+.header-list{
+    display: flex;
+    gap: 24px;
+}
+
+.header-list-item{
+    color: $white-secondary;
+}
+
+.header-contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 12px 12px;
+    gap: 12px;
+    width: 193px;
+    border: 1px $white-primary solid;
+    border-radius: 50px;
+    color: $white-primary;
+    text-transform: uppercase;
+}
+
+.header-logo{
+    cursor: pointer;
+}
