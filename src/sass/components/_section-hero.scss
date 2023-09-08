@@ -1,9 +1,40 @@
 .hero{
-    max-width: 1440px;
-    max-height: 920px;
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-//     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))),url(../images/decoration-img/hero-desktop.jpg);
-//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/decoration-img/hero-desktop.jpg);
-//     background-size: cover;
+    max-width: $desktop-wide;
+    height: 920px;
+    margin: 0px auto 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 100%), 
+    url(../images/Main-photo.jpg), lightgray -6.167px -151px / 135.648% 159.239% no-repeat;
+    background-size: cover;
 }
+.hero-wraper{
+    display: flex;
+    align-items: flex-end;
+    gap: $gap-primary;
+}
+
+.hero-text{
+    font-size: 16px;
+    line-height: $pimary;
+    font-weight: $medium;
+    color: $white-primary-rgb;
+}
+
+.main-title{
+    width: 650px;
+    font-size: 40px;
+    font-weight: $bold;
+    line-height: $secondary; 
+    text-transform: uppercase;
+    color: $white-primary;
+}
+
+.hero-btn{
+    display: flex;
+    gap: $gap-primary;
+    width: 193px;
+    height: 52px;
+    padding: 0px 20px 0px;
+    color: $white-primary;
+    background-color: $blue-accent;
+}
+
