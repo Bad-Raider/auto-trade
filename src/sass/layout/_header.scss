@@ -1,9 +1,10 @@
-.container-header{
-    position: absolute; /* Встановлюємо абсолютне позиціонування */
-    top: 0; /* Встановлюємо верхню грань на верхню грань контейнера */
-    left: 0; /* Встановлюємо ліву грань на ліву грань контейнера */
-    z-index: 2; /* Встановлюємо вищий z-index, щоб контейнер-заголовок був поверх контейнера-героя */
+.header{
+    width: 1440px;
+}
 
+.header-container{
+    position: fixed;
+    top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +33,7 @@
 
 .header-list-item{
     color: $white-secondary;
+    cursor: pointer;
 }
 
 .header-contacts{

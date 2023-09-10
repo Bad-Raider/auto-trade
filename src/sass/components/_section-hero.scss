@@ -1,8 +1,4 @@
 .hero{
-    position: relative;
-        /* Встановлюємо відносне позиціонування */
-    z-index: 1;
-        /* Встановлюємо нижчий z-index, щоб контейнер-герой був позаду контейнера-заголовку */
     max-width: $desktop-wide;
     height: 920px;
     margin: 0px auto 0px;
@@ -10,13 +6,14 @@
     url(../images/Main-photo.jpg), lightgray -6.167px -151px / 135.648% 159.239% no-repeat;
     background-size: cover;
 }
-.hero-wraper{
+.hero-location{
     display: flex;
     align-items: flex-end;
     gap: $gap-primary;
+    margin-top: 136px;
 }
 
-.hero-text{
+.header-location__text{
     font-size: 16px;
     line-height: $pimary;
     font-weight: $medium;
@@ -24,6 +21,7 @@
 }
 
 .main-title{
+    margin-top: 20px;
     width: 650px;
     font-size: 40px;
     font-weight: $bold;
@@ -38,7 +36,7 @@
     justify-content: center;
     gap: $gap-primary;
     padding: 0px 20px 0px;
-    margin-top: 40px;
+    margin-top: 44px;
     width: 193px;
     height: 52px;
     font-size: 14px;
