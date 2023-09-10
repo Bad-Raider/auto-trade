@@ -1,9 +1,7 @@
-.header{
-    width: 1440px;
-}
 
 .header-container{
     position: fixed;
+    z-index: 1;
     top: 20px;
     display: flex;
     justify-content: center;
