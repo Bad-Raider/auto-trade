@@ -1,4 +1,8 @@
 .hero{
+    position: relative;
+        /* Встановлюємо відносне позиціонування */
+    z-index: 1;
+        /* Встановлюємо нижчий z-index, щоб контейнер-герой був позаду контейнера-заголовку */
     max-width: $desktop-wide;
     height: 920px;
     margin: 0px auto 0px;
@@ -30,11 +34,77 @@
 
 .hero-btn{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: $gap-primary;
+    padding: 0px 20px 0px;
+    margin-top: 40px;
     width: 193px;
     height: 52px;
-    padding: 0px 20px 0px;
+    font-size: 14px;
+    font-weight: $medium;
+    line-height: $pimary;
     color: $white-primary;
-    background-color: $blue-accent;
+    background-color: $blue-acсent;
+    border: none;
+    text-transform: uppercase;
+}
+
+
+.hero-table{
+    width: $desktop;
+    height: 452px;
+}
+
+.hero-table__column{
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to top, 
+    #9a9797, 
+    rgba(235, 235, 235, 0.00) 100%
+    ) 1 100%;
+    
+    &:not(:last-child){
+        border-right: transparent;
+    }
+        
+    &::before {
+        content: "";
+        width: 2px;
+        height: 40px;
+        background-color: $blue-acсent;
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        transform: translateX(50%);
+    }
+
+    &:last-child::after{
+        content: "";
+        width: 2px;
+        height: 40px;
+        background-color: $blue-acсent;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translateX(50%);
+    }
+}
+
+.hero-table__text{
+    text-align: center;
+    color: $white-primary-rgb;
+    font-size: 16px;
+    line-height: $thirdery;
+}
+
+.hero-table__element{
+    font-size: 32px;
+    line-height: $thirdery;
+    font-weight: $medium;
+    color: $white-primary;
 }
 
