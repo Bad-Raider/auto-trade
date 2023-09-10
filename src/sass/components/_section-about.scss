@@ -1,0 +1,32 @@
+.about{
+    padding: 100px 0 100px;
+    background-color: $grey;
+}
+
+.about-wraper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img{
+    height: 471px;
+    z-index: 1;
+}
+
+.about-img-background{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 628px;
+    height: 471px;
+    background-color: rgba(28, 100, 236, 0.12);;
+
+}
+
+
+.about-article{
+    width: 519px;
+    height: 496px;
+
+}

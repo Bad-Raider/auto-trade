@@ -50,12 +50,12 @@
 
 
 .hero-table{
-    width: $desktop;
     height: 452px;
 }
 
 .hero-table__column{
     position: relative;
+    width: 320px;
     border-width: 1px;
     border-style: solid;
     border-image: 
@@ -70,22 +70,22 @@
     }
         
     &::before {
+        position: absolute;
         content: "";
         width: 2px;
         height: 40px;
         background-color: $accent;
-        position: absolute;
         top: 50%;
         right: 100%;
         transform: translateX(50%);
     }
 
     &:last-child::after{
+        position: absolute;
         content: "";
         width: 2px;
         height: 40px;
         background-color: $accent;
-        position: absolute;
         top: 50%;
         left: 100%;
         transform: translateX(50%);
