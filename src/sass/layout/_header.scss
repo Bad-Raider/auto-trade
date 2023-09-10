@@ -1,4 +1,10 @@
-.container-header{
+.header{
+    width: 1440px;
+}
+
+.header-container{
+    position: fixed;
+    top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +33,7 @@
 
 .header-list-item{
     color: $white-secondary;
+    cursor: pointer;
 }
 
 .header-contacts{
