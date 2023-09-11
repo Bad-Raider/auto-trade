@@ -1,0 +1,76 @@
+.services{
+    background-color: $grey;
+    padding-bottom: 100px;
+}
+
+.services-list{
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 52px;
+}
+
+.services-item__wraper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 302px;
+    height: 572px;
+    padding: 24px 54px;
+    border: 1px solid $black-rgb-card;
+    background: radial-gradient(115.28% 115.28% at 50% 50%, rgba(26, 26, 26, 0.08) 0%, rgba(26, 26, 26, 0.00) 100%);
+    box-shadow: 0px 4px 52px 0px rgba(51, 51, 51, 0.12);
+}
+
+.services-title{
+    color: $black-primary;
+    text-align: center;
+    font-size: 28px;
+    font-weight: $medium-second;
+    line-height: $pimary;
+}
+
+.services-price{
+    display: inline-flex;
+    height: 40px;
+    padding: 0px 12px;
+    justify-content: center;
+    align-items: center;
+    max-width: 141px;
+    margin-left: auto;
+    margin-right: -55px;
+    font-size: 15px;
+    border-top: 2px solid $black-secondary;
+    border-bottom: 2px solid $black-secondary;
+    border-left: 2px solid $black-secondary;
+}
+
+.services-list-card{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.services-list-card__text{
+    font-size: 15px;
+}
+
+.text-black {
+    font-weight: $medium-second;
+    color: $black-primary;
+}
+
+.btn-ligth{
+    border: 2px solid $accent;
+    background-color: transparent;
+    color: $accent;
+    margin: 0px;
+    transition: color $transition-duration;
+    transition: background-color $transition-duration;
+    &:hover,
+    &:focus {
+        border: none;
+        background-color: $accent;
+        color: $white-primary;
+    }
+}

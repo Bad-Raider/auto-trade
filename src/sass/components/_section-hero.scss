@@ -30,7 +30,7 @@
     color: $white-primary;
 }
 
-.hero-btn{
+.btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +46,15 @@
     background-color: $accent;
     border: none;
     text-transform: uppercase;
+    transition: color $transition-duration;
+    transition: background-color $transition-duration;
+        
+    &:hover,
+    &:focus {
+        border: 2px solid $accent;
+        background-color: $white-primary;
+        color: $accent;
+    }
 }
 
 

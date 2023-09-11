@@ -32,6 +32,12 @@
 .header-list-item{
     color: $white-secondary;
     cursor: pointer;
+    transition: color $transition-duration;
+
+    &:hover,
+    &:focus{
+        color: $accent;
+    }
 }
 
 .header-contacts{
@@ -46,6 +52,14 @@
     border-radius: 50px;
     color: $white-primary;
     text-transform: uppercase;
+    transition: color $transition-duration;
+    transition: border-color $transition-duration;
+
+    &:hover,
+    &:focus{
+        border-color: $accent;
+        color: $accent
+    }
 }
 
 .header-logo{
