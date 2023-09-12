@@ -1,0 +1,44 @@
+.stages{
+    position: relative;
+}
+
+.stages-list{
+    display: flex;
+    justify-content: flex-end;
+    gap: 117px;
+}
+
+.stages-list__item{
+    color: $blue-rgb;
+    font-size: 200px;
+    font-weight: $medium; 
+}
+
+.stages-list__item--placing{
+    &:nth-child(odd) {
+        margin-top: auto;
+    }
+
+    &:nth-child(even) {
+        margin-bottom: 207px;
+    }
+}
+
+.stages-list-action{
+    position: absolute;
+    top: 36%;
+    display: flex;
+    justify-content: flex-end;
+    width: $desktop;
+    text-align: center;
+}
+
+.stages-list-action__item{
+    display: flex;
+    flex-direction: column;
+    gap: $gap-primary;
+    width: 352px;
+    &:not(:last-child){
+        margin-right: -118px;
+    }
+}
