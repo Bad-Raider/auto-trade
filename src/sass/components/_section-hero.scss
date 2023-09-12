@@ -21,6 +21,7 @@
 }
 
 .main-title{
+    margin-bottom: 44px;
     margin-top: 20px;
     width: 650px;
     font-size: 40px;
@@ -36,7 +37,6 @@
     justify-content: center;
     gap: $gap-primary;
     padding: 0px 20px 0px;
-    margin-top: 44px;
     width: 193px;
     height: 52px;
     font-size: 14px;
@@ -51,9 +51,10 @@
         
     &:hover,
     &:focus {
-        border: 2px solid $accent;
-        background-color: $white-primary;
-        color: $accent;
+        border: 2px solid $white-primary;
+        background-color: $black-secondary;
+        color: $white-primary;
+        border-radius: 5px;
     }
 }
 
