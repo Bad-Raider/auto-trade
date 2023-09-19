@@ -1,6 +1,11 @@
+.inspection{
+    padding: 52px 0px 52px;
+}
+
 .inspection-list{
     display: flex;
     justify-content: space-between;
+    margin: 52px 0px 52px;
 }
 
 .inspection-wraper{
@@ -10,9 +15,6 @@
 
 }
 
-.inspection-discription{
-    padding: 52px 0px 52px;
-}
 
 .inspection-discription__list{
     display: grid;
@@ -23,7 +25,7 @@
 
 .inspection-discription__item{
     display: flex;
-    border-bottom: 1px solid rgba(26, 26, 26, 0.16);
+    border-bottom: 1px solid $grey-bottom;
     justify-content: space-between;
 }
 
