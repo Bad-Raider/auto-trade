@@ -1,0 +1,39 @@
+.order-bottom{
+    background-color: $white-primary;
+}
+
+.container--color-bgr{
+    background: none;
+}
+
+.order-title--bottom{
+    color: $black-primary;
+}
+
+.order-text--bottom{
+    color: $black-secondary;
+}
+
+.order-form__input--bottom {
+    color: $black-primary;
+    border-bottom: 1px solid $black-secondary;
+
+    &::placeholder {
+        color: $black-secondary;
+    }
+
+    &:focus {
+        outline: 1px solid $black-secondary;
+    }
+}
+
+.order-form--bottom{
+    position: relative;
+    z-index: 1;
+}
+
+.order-bottom-bgr{
+    position: absolute;
+    margin-top: 161px;
+    margin-left: 151px;
+}

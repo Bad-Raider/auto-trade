@@ -53,8 +53,8 @@
     border-left: none;
     border-right: none;
     border-bottom: 1px solid $white-primary-rgb;
-    transform: color $transition-duration;
-    transform: outline $transition-duration;
+    transition: color $transition-duration;
+    transition: outline $transition-duration;
 
     &::placeholder{
         color: $white-primary-rgb;
