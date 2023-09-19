@@ -1,11 +1,11 @@
+@import './utils/colors';
+@import './utils/variebles';
+@import './utils/animations';
+
 @import './font/font';
 @import './base/common';
 @import './base/defaults';
 
-
-@import './utils/colors';
-@import './utils/variebles';
-@import './utils/animations';
 
 @import './layout/header';
 
@@ -17,4 +17,5 @@
 @import './components/section-services';
 @import './components/section-order';
 @import './components/section-stages';
+@import './components/section-inspection';
 
