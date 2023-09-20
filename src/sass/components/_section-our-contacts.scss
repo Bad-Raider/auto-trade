@@ -4,19 +4,19 @@
 
 .container--relative{
     position: relative;
-    padding-left: 0px;
 }
 
 .our-contacts-wraper-img{
     width: 925px;
     margin-top: 52px;
+    margin-left: -80px;
     height: auto;
     box-shadow: 0px 0px 48px 0px $black-shadow;
 }
 
 .our-contacts-wraper-card{
     position: absolute;
-    bottom: 0%;
+    bottom: 8%;
     right: 7%;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,9 @@
     font-size: 28px;
     font-weight: $medium-second;
     line-height: $secondary2;
+}
 
+.our-contacts-wraper-card__title--before{
     &::before{
         content: "";
         height: 100%;
@@ -43,4 +45,20 @@
         top: 14%;
         left: 73%;
     }
+}
+
+.our-contacts-wraper-card__title--instagram{
+    width: 671px;
+    margin-top: 100px;
+    margin-bottom: 52px;
+}
+
+.our-contacts-icon{
+    fill: currentColor;
+}
+
+.our-contacts-link{
+    position: absolute;
+    top: 83%;
+    left: 64%;
 }
