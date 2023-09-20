@@ -1,0 +1,46 @@
+.our-contacts{
+    padding-bottom: 193px;
+}
+
+.container--relative{
+    position: relative;
+    padding-left: 0px;
+}
+
+.our-contacts-wraper-img{
+    width: 925px;
+    margin-top: 52px;
+    height: auto;
+    box-shadow: 0px 0px 48px 0px $black-shadow;
+}
+
+.our-contacts-wraper-card{
+    position: absolute;
+    bottom: 0%;
+    right: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-primary;
+    padding: 52px 70px 52px 109px;
+    width: 620px;
+    background-color: $grey;
+}
+
+.our-contacts-wraper-card__title{
+    margin-bottom: 24px;
+    color: $black-primary;
+    font-size: 28px;
+    font-weight: $medium-second;
+    line-height: $secondary2;
+
+    &::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: url("../images/blue-heart.png") no-repeat;
+        display: block;
+        position: absolute;
+        top: 14%;
+        left: 73%;
+    }
+}
