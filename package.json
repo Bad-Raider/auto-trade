@@ -5,7 +5,7 @@
   "homepage": "https://Bad-Raider.github.io/auto-trade",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Bad-Raider/"
+    "build": "parcel build src/*.html --public-url /auto-trade/"
   },
   "repository": {
     "type": "git",
