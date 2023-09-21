@@ -19,7 +19,7 @@
 <path d="M18.667 2.667l-1.907 1.857 10.107 10.143h-26.867v2.667h26.867l-10.107 10.097 1.907 1.903 13.333-13.333-13.333-13.333z"></path>
 </symbol>
 <symbol id="icon-arrow-up-min" viewBox="0 0 32 32">
-<path fill="#fafafa" style="fill: var(--color1, #fafafa)" d="M6.4 0v3.2h20.144l-26.544 26.544 2.256 2.256 26.544-26.544v20.144h3.2v-25.6h-25.6z"></path>
+<path fill="currentColor"  d="M6.4 0v3.2h20.144l-26.544 26.544 2.256 2.256 26.544-26.544v20.144h3.2v-25.6h-25.6z"></path>
 </symbol>
 <symbol id="icon-cross-min" viewBox="0 0 32 32">
 <path d="M18 14v-14h-4v14h-14v4h14v14h4v-14h14v-4h-14z"></path>
