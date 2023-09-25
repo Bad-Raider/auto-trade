@@ -50,5 +50,16 @@
 
 .footer-wraper-creators{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 2;
+    gap: $gap-primary;
+}
+
+.footer-wraper-creators__item{
+    display: flex;
+    color: $white-primary-rgb;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px;
 }
