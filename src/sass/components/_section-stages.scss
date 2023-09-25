@@ -45,6 +45,7 @@
 }
 
 .stages-list__title{
+    font-size: 16px;
     color: $black-primary;
     font-weight: 600;
     text-transform: uppercase;
@@ -60,9 +61,9 @@
 }
 
 .first-icon {
-    left: 23%;
-    bottom: 113%;
     height: 180px;
+    bottom: 122%;
+    left: 23%;
 }
 
 .second-icon{

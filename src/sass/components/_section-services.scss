@@ -15,28 +15,6 @@
     position: relative;
 }
 
-.elements{
-    &::after{
-        position: absolute;
-        top: 36%;
-        left: 0%;
-        content: "";
-        width: 24px;
-        height: 200px;
-        background-color: $blue-rgb;
-    }
-
-    &::before{
-        position: absolute;
-        top: 36%;
-        right: 0%;
-        content: "";
-        width: 24px;
-        height: 200px;
-        background-color: $blue-rgb;
-    }
-}
-
 .services-item__wraper{
     display: flex;
     flex-direction: column;

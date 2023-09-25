@@ -48,17 +48,7 @@
     }
 }
 
-.footer-wraper-creators__icon{
-    color: $white-primary;
-}
-
 .footer-wraper-creators{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer-wraper-creators__icon{
-    margin-left: auto;
-    
+    flex-direction: column-reverse;
 }
