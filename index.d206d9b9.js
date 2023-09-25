@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".btn-back-to-top");e.addEventListener("click",(function(){window.scrollTo({top:0,behavior:"smooth"})})),window.addEventListener("scroll",(function(){window.scrollY>800?e.style.display="flex":e.style.display="none"}));var n=document.querySelectorAll(".inspection-btn"),t=document.querySelectorAll(".inspection-text");n.forEach((function(e,n){e.addEventListener("click",(function(){var e=t[n];e.classList.contains("expanded")?e.classList.remove("expanded"):e.classList.add("expanded")}))}))}();
+//# sourceMappingURL=index.d206d9b9.js.map

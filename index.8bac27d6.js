@@ -1,0 +1,2 @@
+const e=document.querySelector(".btn-back-to-top");e.addEventListener("click",(()=>{window.scrollTo({top:0,behavior:"smooth"})})),window.addEventListener("scroll",(()=>{window.scrollY>800?e.style.display="flex":e.style.display="none"}));const t=document.querySelectorAll(".inspection-btn"),n=document.querySelectorAll(".inspection-text");t.forEach(((e,t)=>{e.addEventListener("click",(()=>{const e=n[t];e.classList.contains("expanded")?e.classList.remove("expanded"):e.classList.add("expanded")}))}));
+//# sourceMappingURL=index.8bac27d6.js.map
