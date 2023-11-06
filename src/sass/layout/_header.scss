@@ -1,5 +1,4 @@
-
-.header-container{
+.header-container {
     position: fixed;
     z-index: 100;
     top: 20px;
@@ -14,34 +13,34 @@
     border: 1px $black solid;
 }
 
-.header-nav{
+.header-nav {
     display: flex;
     align-items: center;
 }
 
-.header-logo{
+.header-logo {
     display: flex;
     margin-right: 165px;
 }
 
-.header-list{
+.header-list {
     display: flex;
     gap: 24px;
 }
 
-.header-list-item{
+.header-list-item {
     padding: 15px 0px;
     color: $white-secondary;
     cursor: pointer;
     transition: color $transition-duration;
 
     &:hover,
-    &:focus{
+    &:focus {
         color: $accent;
     }
 }
 
-.header-contacts{
+.header-contacts {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,12 +56,12 @@
     transition: border-color $transition-duration;
 
     &:hover,
-    &:focus{
+    &:focus {
         border-color: $accent;
-        color: $accent
+        color: $accent;
     }
 }
 
-.header-logo{
+.header-logo {
     cursor: pointer;
 }
