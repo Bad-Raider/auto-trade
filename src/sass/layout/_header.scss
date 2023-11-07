@@ -5,10 +5,9 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto 0;
-    gap: 24px;
+    gap: $gap-secondary;
     width: 335px;
-    // padding: 11px 109px;
-    // width: 1280px;
+
     background-color: $grey-background;
     backdrop-filter: blur(2px);
     z-index: 100;
@@ -38,7 +37,6 @@
     @media screen and (min-width: $tablet) {
         width: 664px;
     }
-
 }
 
 .header-logo {
@@ -52,7 +50,6 @@
         height: 56px;
     }
 
-
     @media screen and (min-width: $desktop-wide) {
         margin-right: 165px;
     }
@@ -60,7 +57,7 @@
 
 // .header-logo-icon{
 //     width: 40px;
-    
+
 //     @media screen and (min-width: $tablet) {
 //         width: 56px;
 //     }
