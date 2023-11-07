@@ -1,31 +1,70 @@
 .header-container {
     position: fixed;
-    z-index: 100;
     top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 11px 109px;
     margin: 0 auto 0;
-    width: 1280px;
     gap: 24px;
-    background-color: $black-primary;
-    border: 1px $black solid;
+    width: 335px;
+    // padding: 11px 109px;
+    // width: 1280px;
+    background-color: $grey-background;
+    backdrop-filter: blur(2px);
+    z-index: 100;
+
+    @media screen and (min-width: $tablet) {
+        width: 664px;
+        padding: 11px 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 1160px;
+        padding: 11px 60px;
+    }
+
+    @media screen and (min-width: $desktop-wide) {
+        width: 1280px;
+        padding: 11px 109px;
+    }
 }
 
 .header-nav {
-    display: flex;
+    width: 335px;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-logo {
     display: flex;
-    margin-right: 165px;
+    width: 40px;
+    cursor: pointer;
+
+    @media screen and (min-width: $desktop-wide) {
+        margin-right: 165px;
+    }
+}
+
+.header-burger-menu {
+    color: $white-base;
+    border: none;
+    background-color: transparent;
+    transition: color $transition-duration;
+
+    &:hover,
+    &:focus {
+        color: $accent;
+    }
 }
 
 .header-list {
-    display: flex;
-    gap: 24px;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        gap: 24px;
+    }
 }
 
 .header-list-item {
@@ -41,27 +80,27 @@
 }
 
 .header-contacts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 12px 12px;
-    gap: 12px;
-    width: 193px;
-    border: 1px $white-primary solid;
-    border-radius: 50px;
-    color: $white-primary;
-    text-transform: uppercase;
-    transition: color $transition-duration;
-    transition: border-color $transition-duration;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 12px 12px;
+        gap: 12px;
+        width: 193px;
+        border: 1px $white-primary solid;
+        border-radius: 50px;
+        color: $white-primary;
+        text-transform: uppercase;
+        transition: color $transition-duration;
+        transition: border-color $transition-duration;
+    }
 
     &:hover,
     &:focus {
         border-color: $accent;
         color: $accent;
     }
-}
-
-.header-logo {
-    cursor: pointer;
 }

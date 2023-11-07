@@ -1,13 +1,12 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
-
 @import './utils/colors';
 @import './utils/variebles';
 
 @import './font/font';
 @import './base/common';
 @import './base/defaults';
-
+@import './base/containers';
 
 @import './layout/header';
 
