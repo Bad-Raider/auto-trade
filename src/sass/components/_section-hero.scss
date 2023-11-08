@@ -7,15 +7,21 @@
     margin: 0 auto;
 }
 
+.hero-wraper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 285px 0 285px;
+}
+
 .hero-location{
     display: flex;
     align-items: flex-end;
     gap: $gap-primary;
-    padding-top: 136px;
 }
 
 .header-location__text{
-    font-size: 16px;
+    font-size: $font-size-secondary;
     line-height: $pimary;
     font-weight: $medium;
     color: $white-primary-rgb;
@@ -24,12 +30,13 @@
 .main-title{
     margin-bottom: 44px;
     margin-top: 20px;
-    width: 650px;
-    font-size: 40px;
+    text-align: center;
+    font-size: $font-size-thirdery;
     font-weight: $bold;
-    line-height: $secondary; 
+    line-height: $secondary2; 
     text-transform: uppercase;
     color: $white-primary;
+    // font-size: 40px;
 }
 
 .btn{
@@ -60,7 +67,12 @@
 
 
 .hero-table{
-    height: 452px;
+    display: none;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        height: 452px;
+    }
+
 }
 
 .hero-table__column{
