@@ -1,11 +1,12 @@
 .hero{
-    max-width: $desktop-wide;
-    height: 920px;
-    margin: 0px auto 0px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.52) 100%), 
-    url(../images/Main-photo.jpg), lightgray -6.167px -151px / 135.648% 159.239% no-repeat;
+
+    background: url("../images/hero.jpg") ;
+    background-position: 59%;
+    background-repeat: no-repeat;
     background-size: cover;
+    margin: 0 auto;
 }
+
 .hero-location{
     display: flex;
     align-items: flex-end;
