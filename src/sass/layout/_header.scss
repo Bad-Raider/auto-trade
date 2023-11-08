@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
     margin: 0 auto 0;
     gap: $gap-secondary;
     width: 335px;
@@ -14,7 +15,7 @@
 
     @media screen and (min-width: $tablet) {
         width: 664px;
-        padding: 0 20px;
+        padding: 8px 20px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -29,21 +30,15 @@
 }
 
 .header-nav {
-    width: 335px;
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-
-    @media screen and (min-width: $tablet) {
-        width: 664px;
-    }
 }
 
 .header-logo {
     display: flex;
     width: 40px;
     height: 40px;
-    cursor: pointer;
 
     @media screen and (min-width: $tablet) {
         width: 56px;
@@ -54,15 +49,6 @@
         margin-right: 165px;
     }
 }
-
-// .header-logo-icon{
-//     width: 40px;
-
-//     @media screen and (min-width: $tablet) {
-//         width: 56px;
-//     }
-
-// }
 
 .header-burger-menu {
     color: $white-base;
@@ -85,7 +71,7 @@
 
     @media screen and (min-width: $tablet) {
         display: flex;
-        gap: 20px;
+        gap: $gap-thirdery;
     }
 }
 
@@ -111,7 +97,7 @@
         justify-content: center;
         align-items: flex-end;
         padding: 12px 12px;
-        gap: 12px;
+        gap: $gap-primary;
         width: 193px;
         border: 1px $white-primary solid;
         border-radius: 50px;
