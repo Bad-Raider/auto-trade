@@ -17,6 +17,8 @@
 
     @media screen and (min-width: $desktop) {
         flex-direction: column;
+        width: 771px;
+        margin: 0 auto 0;
     }
 }
 
@@ -125,6 +127,14 @@
         left: 99%;
       }
 
+      @media screen and (min-width: $desktop) {
+        width: 290px;
+        height: 138px;
+
+    }
+    @media screen and (min-width: $desktop-wide) {
+        width: 321px;
+    }
 }
 
 .hero-table-text {
@@ -133,5 +143,9 @@
     color: $white-primary-rgb;
     font-size: $font-size-secondary;
     line-height: normal;
+
+    @media screen and (min-width: $desktop) {
+        width: max-content;
+    }
 }
 
