@@ -1,0 +1,11 @@
+.section-light {
+    padding: 60px 0 60px;
+
+    @media screen and (min-width: $tablet) {
+        padding: 80px 0 80px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 100px 0 100px;
+    }
+}

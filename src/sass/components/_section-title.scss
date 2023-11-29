@@ -1,12 +1,20 @@
 .section-title {
-    font-size: 36px;
+    font-size: $font-size-fourth;
     font-weight: $medium;
     text-transform: uppercase;
     color: $black-primary;
+    @media screen and (min-width: $tablet) {
+        font-size: $font-size-fourth;
+    }
+
 }
 
 .section-title-word {
-    font-size: 32px;
+    font-size: $font-size-thirdery;
+    text-transform: none;
     font-weight: $light;
     color: $black-rgb;
+    @media screen and (min-width: $tablet) {
+        font-size: $font-size-fourth;
+    }
 }

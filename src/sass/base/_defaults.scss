@@ -1,8 +1,8 @@
 /* My defaults */
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: $font-size-secondary;
+  font-weight: $regular;
   color: $black-secondary;
   background-color: $white-secondary;
   overflow-x:hidden; 
