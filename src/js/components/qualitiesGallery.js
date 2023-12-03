@@ -1,5 +1,5 @@
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.section-gallery__btn--prev');
+const nextButton = document.querySelector('.section-gallery__btn--next');
 const qualitiesList = document.querySelector('.qualities-list');
 
 const width = 322;

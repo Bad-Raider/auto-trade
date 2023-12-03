@@ -19,10 +19,11 @@
     @media screen and (min-width: $tablet) {
         overflow: visible;
         width: auto;
+        margin-top: 52px;
     }
 }
 
-.arrow {
+.section-gallery__btn {
     position: absolute;
     display: block;
     background: transparent;
@@ -36,7 +37,7 @@
     fill: $white-base;
 }
 
-.prev {
+.section-gallery__btn--prev {
     display: none;
     transform: rotate(180deg);
     left: 0px;
@@ -46,7 +47,8 @@
     }
 }
 
-.next {
+
+.section-gallery__btn--next {
     right: 20px;
     @media screen and (min-width: $tablet) {
         display: none;
@@ -110,7 +112,6 @@
             margin-top: -70px;
         }
     }
-
 }
 
 .qualities-item_wraper {
