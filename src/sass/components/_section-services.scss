@@ -1,6 +1,14 @@
 .services {
     position: relative;
-    padding-bottom: 100px;
+    padding: 60px 0px 60px;
+
+    @media screen and (min-width: $tablet) {
+        padding: 80px 0px 80px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding: 100px 0px 100px;
+    }
 }
 
 .container--position {
@@ -12,31 +20,41 @@
     flex-direction: column;
     gap: 40px;
     margin-top: 40px;
-    @media screen and (min-width: $desktop) {
-        justify-content: center;
-        gap: 48px;
-        margin-top: 52px;
+
+    @media screen and (min-width: $tablet) {
+        width: 302px;
     }
+
+    // @media screen and (min-width: $desktop) {
+    //     justify-content: center;
+    //     gap: 48px;
+    //     margin-top: 52px;
+    // }
 }
 
-.services-item{
+.services-item {
     border-top: 6px solid $accent;
+    @media screen and (min-width: $tablet) {
+        width: 302px;
+    }
 }
 
 .services-item__wraper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
     // width: 302px;
-    height: 572px;
-    padding: 24px 54px;
-    border: 1px solid $black-rgb-card;
-    background: radial-gradient(
-        115.28% 115.28% at 50% 50%,
-        rgba(26, 26, 26, 0.08) 0%,
-        rgba(26, 26, 26, 0) 100%
-    );
-    box-shadow: 0px 4px 52px 0px rgba(51, 51, 51, 0.12);
+    padding: 40px 70px;
+    border: 1px solid $grey;
+    background: linear-gradient(0deg, #fff 0%, #fff 100%),
+        radial-gradient(
+            115.28% 115.28% at 50% 50%,
+            #1a1a1a 0%,
+            rgba(26, 26, 26, 0) 100%
+        );
+
+    @media screen and (min-width: $tablet) {
+        padding: 32px 53px;
+    }
 }
 
 .services-title {
@@ -45,27 +63,34 @@
     font-size: 20px;
     font-weight: $medium-second;
     line-height: $pimary;
-    
+
     @media screen and (min-width: $tablet) {
-        font-size: 28px;    
+        font-size: 28px;
     }
 }
 
 .services-price {
+    margin-top: 12px;
     color: $accent;
     text-align: center;
     text-transform: uppercase;
     font-weight: $medium-second;
+    @media screen and (min-width: $tablet) {
+        font-size: $font-size-pimary;
+    }
 }
 
 .services-list-card {
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
+    margin: 20px 0px 40px;
+    line-height: $secondary2;
 
-.services-list-card__text {
-    font-size: 15px;
+    @media screen and (min-width: $tablet) {
+        margin: 24px 0px 24px;
+        font-size: $font-size-pimary;
+    }
 }
 
 .text-black {
