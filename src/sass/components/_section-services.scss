@@ -15,34 +15,50 @@
     position: relative;
 }
 
+.services-list-wraper {
+    @media screen and (min-width: $tablet) {
+        width: 704px;
+        overflow: hidden;
+    }
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: space-around;
+        width: auto;
+        overflow: visible;
+    }
+}
+
 .services-list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-top: 40px;
 
     @media screen and (min-width: $tablet) {
-        width: 302px;
+        width: 303px * 3+20 * 3;
+        flex-direction: row;
     }
+}
 
-    // @media screen and (min-width: $desktop) {
-    //     justify-content: center;
-    //     gap: 48px;
-    //     margin-top: 52px;
-    // }
+.swiper-slide {
+    @media screen and (min-width: $tablet) {
+        width: 303px;
+    }
 }
 
 .services-item {
+    margin-top: 40px;
     border-top: 6px solid $accent;
-    @media screen and (min-width: $tablet) {
-        width: 302px;
+    transition: $transition-duration;
+
+    @media screen and (min-width: $desktop) {
+        &:hover {
+            transform: translateY(-30px);
+        }
     }
 }
 
 .services-item__wraper {
     display: flex;
     flex-direction: column;
-    // width: 302px;
     padding: 40px 70px;
     border: 1px solid $grey;
     background: linear-gradient(0deg, #fff 0%, #fff 100%),
@@ -53,14 +69,14 @@
         );
 
     @media screen and (min-width: $tablet) {
-        padding: 32px 53px;
+        padding: 32px 52px;
     }
 }
 
 .services-title {
     color: $black-primary;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: $medium-second;
     line-height: $pimary;
 
@@ -89,12 +105,14 @@
 
     @media screen and (min-width: $tablet) {
         margin: 24px 0px 24px;
-        font-size: $font-size-pimary;
     }
+}
+.services-list-card__item {
+    font-size: $font-size-pimary;
 }
 
 .text-black {
-    font-weight: $medium-second;
+    font-weight: $medium;
     color: $black-primary;
 }
 

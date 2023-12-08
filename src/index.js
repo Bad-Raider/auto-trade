@@ -6,3 +6,5 @@ import './js/components/inspection.js';
 import './js/components/heroOnAllDisplay.js';
 // qualities gallery counter and buttons logic
 import './js/components/qualitiesGallery.js';
+// swiper on page
+import './js/components/swiper.js';
