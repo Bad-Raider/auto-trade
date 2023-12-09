@@ -55,7 +55,6 @@
 .qualities-list {
     display: flex;
     width: 1610px;
-    transition: margin-left 250ms;
 
     @media screen and (min-width: $tablet) {
         display: grid;
