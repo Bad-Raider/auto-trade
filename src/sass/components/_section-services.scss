@@ -33,14 +33,14 @@
     flex-direction: column;
 
     @media screen and (min-width: $tablet) {
-        width: 303px * 3+20 * 3;
+        width: 302px * 3+20 * 3;
         flex-direction: row;
     }
 }
 
-.swiper-slide {
+.services-slide {
     @media screen and (min-width: $tablet) {
-        width: 303px;
+        width: 302px;
     }
 }
 

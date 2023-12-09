@@ -54,12 +54,13 @@
 
 .qualities-list {
     display: flex;
-    width: 1590px;
-    gap: $gap-thirdery;
+    width: 1610px;
     transition: margin-left 250ms;
 
     @media screen and (min-width: $tablet) {
         display: grid;
+        
+            gap: $gap-thirdery;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         width: auto;
