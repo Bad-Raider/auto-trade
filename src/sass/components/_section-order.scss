@@ -1,52 +1,78 @@
-.order{
-    padding: 100px 0px;
+.order {
     max-width: $desktop-wide;
-    height: 512px;
+    // height: 512px;
+    padding: 60px 0px;
     margin: 0px auto 0px;
-    background-image: url(../images/section-order.jpg);
+    background-image: url(../images/section-order-mobile.jpg);
     background-size: cover;
+
+    @media screen and ($tablet) {
+        padding: 80px 0px;
+    }
+    @media screen and ($desktop) {
+        padding: 100px 0px;
+    }
 }
 
-.container--flex{
+.container--flex {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding-top: 52px;
-    padding-bottom: 52px;
+
+    padding-top: 40px;
+    padding-bottom: 60px;
     border-top: 1px solid rgba(235, 235, 235, 0.12);
     border-bottom: 1px solid rgba(235, 235, 235, 0.12);
-    background: radial-gradient(115.28% 115.28% at 50% 50%, #1A1A1A 0%, rgba(26, 26, 26, 0.00) 100%);
+    background: radial-gradient(
+        115.28% 115.28% at 50% 50%,
+        #1a1a1a 0%,
+        rgba(26, 26, 26, 0) 100%
+    );
 }
 
-.order-title{
+.order-title {
     color: $white-primary;
-    font-size: 28px;
     font-weight: $medium;
+    text-align: center;
+    font-size: $font-size-thirdery;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 28px;
+    }
+
+    @media screen and (min-width: $desktop) {
+    }
+
 }
 
-.order-text{
-    max-width: 737px;
+.order-text {
+    margin: 20px 0 40px;
     color: $white-primary-rgb;
     line-height: $secondary2;
+    text-align: center;
 }
 
 .order-form {
     position: relative;
     display: flex;
-    gap: $gap-secondary;
-    max-width: 845px;
-    max-height: 52px;
+    flex-direction: column;
+    // max-width: 845px;
+    // max-height: 52px;
 }
 
-.order-form__label{
+.order-form__label {
     position: relative;
     display: flex;
-    width: 302px;
+    // width: 302px;
 }
 
-.order-form__input{
+.order-form__label--margin {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.order-form__input {
     width: 100%;
-    padding: 12px 36px 12px;
+    padding: 12px 0px 12px;
     color: $white-primary;
     background-color: transparent;
     border-top: none;
@@ -56,16 +82,32 @@
     transition: color $transition-duration;
     transition: outline $transition-duration;
 
-    &::placeholder{
+    &::placeholder {
         color: $white-primary-rgb;
     }
 
     &:focus {
-        outline: 1px solid $white-primary-rgb;
+        outline: none;
     }
 }
 
-.order-form-icon{
+.order-form__flag {
+    position: relative;
+    padding-left: 73px;
+}
+
+.order-form-icon {
+    position: absolute;
+    top: 7px;
+}
+
+.order-form-prefix {
     position: absolute;
     top: 12px;
+    left: 34px;
+    color: $white-base;
+}
+
+.btn--margin-center {
+    margin: 0 auto;
 }
