@@ -1,23 +1,24 @@
 .order {
-    max-width: $desktop-wide;
+    // max-width: $desktop-wide;
     // height: 512px;
     padding: 60px 0px;
     margin: 0px auto 0px;
     background-image: url(../images/section-order-mobile.jpg);
     background-size: cover;
 
-    @media screen and ($tablet) {
-        padding: 80px 0px;
+    @media screen and (min-width: $tablet) {
+        background-image: url(../images/section-order-tablet.jpg);
     }
-    @media screen and ($desktop) {
+
+    @media screen and (min-width: $desktop) {
         padding: 100px 0px;
+        background-image: url(../images/section-order.jpg);
     }
 }
 
 .container--flex {
     display: flex;
     flex-direction: column;
-
     padding-top: 40px;
     padding-bottom: 60px;
     border-top: 1px solid rgba(235, 235, 235, 0.12);
@@ -27,6 +28,11 @@
         #1a1a1a 0%,
         rgba(26, 26, 26, 0) 100%
     );
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 48px;
+        padding-bottom: 52px;
+    }
 }
 
 .order-title {
@@ -40,8 +46,8 @@
     }
 
     @media screen and (min-width: $desktop) {
+        text-align: start;
     }
-
 }
 
 .order-text {
@@ -49,25 +55,56 @@
     color: $white-primary-rgb;
     line-height: $secondary2;
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        font-size: $font-size-pimary;
+        margin: 32px 0 44px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 628px;
+        text-align: start;
+    }
+}
+
+.order-form__wraper {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        gap: $gap-thirdery;
+    }
+
+    @media screen and (min-width: $desktop) {
+        align-items: flex-end;
+    }
 }
 
 .order-form {
     position: relative;
     display: flex;
     flex-direction: column;
-    // max-width: 845px;
-    // max-height: 52px;
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+    }
 }
 
 .order-form__label {
     position: relative;
     display: flex;
-    // width: 302px;
+    width: 100%;
+
+    @media screen and (min-width: $desktop) {
+        width: 302px;
+    }
 }
 
 .order-form__label--margin {
     margin-top: 20px;
     margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        margin: 0;
+    }
 }
 
 .order-form__input {
@@ -108,6 +145,14 @@
     color: $white-base;
 }
 
-.btn--margin-center {
+.btn--margin {
     margin: 0 auto;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 44px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin: 0 0 0 20px;
+    }
 }

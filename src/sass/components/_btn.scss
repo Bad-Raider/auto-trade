@@ -1,0 +1,38 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $gap-primary;
+    padding: 0px 20px 0px;
+    width: 193px;
+    height: 52px;
+    font-size: 14px;
+    font-weight: $medium-second;
+    line-height: $pimary;
+    color: $white-primary;
+    background-color: $accent;
+    border: none;
+    text-transform: uppercase;
+    transition: color $transition-duration;
+    transition: background-color $transition-duration;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-hover;
+    }
+}
+
+.btn-ligth {
+    border: 2px solid $accent;
+    background-color: transparent;
+    color: $accent;
+    margin: 0px;
+    transition: color $transition-duration;
+    transition: background-color $transition-duration;
+    &:hover,
+    &:focus {
+        border-color: $black-primary;
+        color: $black-primary;
+        background-color: transparent;
+    }
+}

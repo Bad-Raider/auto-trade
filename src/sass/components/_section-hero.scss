@@ -51,31 +51,6 @@
     }
 }
 
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: $gap-primary;
-    padding: 0px 20px 0px;
-    width: 193px;
-    height: 52px;
-    font-size: 14px;
-    font-weight: $medium;
-    line-height: $pimary;
-    color: $white-primary;
-    background-color: $accent;
-    border: none;
-    text-transform: uppercase;
-    transition: color $transition-duration;
-    transition: background-color $transition-duration;
-
-    &:hover,
-    &:focus {
-        border: 2px solid $white-primary;
-        background-color: $black-secondary;
-        color: $white-primary;
-    }
-}
 
 .hero-table {
     display: none;

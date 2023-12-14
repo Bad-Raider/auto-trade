@@ -116,17 +116,4 @@
     color: $black-primary;
 }
 
-.btn-ligth {
-    border: 2px solid $accent;
-    background-color: transparent;
-    color: $accent;
-    margin: 0px;
-    transition: color $transition-duration;
-    transition: background-color $transition-duration;
-    &:hover,
-    &:focus {
-        border: none;
-        background-color: $accent;
-        color: $white-primary;
-    }
-}
+
