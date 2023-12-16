@@ -4,7 +4,7 @@
 
 .stages-list {
     position: absolute;
-    top: -63px;
+    top: -61px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -23,12 +23,17 @@
 .stages-list__item {
     display: flex;
     width: fit-content;
+    height: 160px;
     color: $blue-rgb;
     font-size: 160px;
     font-weight: $medium;
 
+    &:not(:last-child){
+        margin-bottom: 52px;
+    }
+
     &:nth-child(odd) {
-        margin: 0px -15px 0px auto;
+        margin: 0px -15px 52px auto;
 
         @media screen and (min-width: $tablet) {
             justify-content: center;
@@ -55,6 +60,8 @@
         &:not(:first-child) {
             margin-top: -22px;
         }
+
+        
     }
 
     @media screen and (min-width: $desktop) {
@@ -87,7 +94,7 @@
     position: relative;
 
     &:not(:last-child) {
-        margin-bottom: 94px;
+        margin-bottom: 123px;
     }
 
     @media screen and (min-width: $tablet) {
@@ -141,6 +148,8 @@
 
 .stages-list__icon {
     position: absolute;
+    width: 69px;
+    height: 164px;
 
     @media screen and (min-width: $desktop) {
         width: 112px;
@@ -150,7 +159,7 @@
 
 .first-icon {
     top: 0;
-    right: 155px;
+    right: 263px;
 
     @media screen and (min-width: $tablet) {
         left: 292px;
@@ -165,7 +174,7 @@
 .second-icon {
     top: 0px;
     transform: scaleX(-1);
-    left: 155px;
+    left: 267px;
 
     @media screen and (min-width: $tablet) {
         left: -243px;
@@ -179,7 +188,7 @@
 
 .thirdery-icon {
     top: 0;
-    right: 155px;
+    right: 263px;
 
     @media screen and (min-width: $tablet) {
         left: 292px;
@@ -194,7 +203,7 @@
 .fourthery-icon {
     top: 0px;
     transform: scaleX(-1);
-    left: 155px;
+    left: 267px;
 
     @media screen and (min-width: $tablet) {
         left: -243px;
