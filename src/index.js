@@ -6,3 +6,5 @@ import './js/components/inspection.js';
 import './js/components/heroOnAllDisplay.js';
 // swiper on page
 import './js/components/swiper.js';
+// section stages svg icons 
+// import './js/components/sectionStages.js';

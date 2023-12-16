@@ -1,86 +1,236 @@
-.stages{
+.stages-wraper {
     position: relative;
 }
 
-.stages-list{
+.stages-list {
+    position: absolute;
+    top: -63px;
     display: flex;
-    justify-content: flex-end;
-    gap: 117px;
-    margin-top: -40px;
+    flex-direction: column;
+    width: 100%;
+
+    @media screen and (min-width: $tablet) {
+        top: -100px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+        height: 434px;
+        top: -97px;
+    }
 }
 
-.stages-list__item{
+.stages-list__item {
+    display: flex;
+    width: fit-content;
     color: $blue-rgb;
-    font-size: 200px;
-    font-weight: $medium; 
-}
+    font-size: 160px;
+    font-weight: $medium;
 
-.stages-list__item--placing{
     &:nth-child(odd) {
-        margin-top: auto;
+        margin: 0px -15px 0px auto;
+
+        @media screen and (min-width: $tablet) {
+            justify-content: center;
+            margin: 0px 0px 0px 0px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            align-items: flex-end;
+            justify-content: end;
+        }
     }
 
     &:nth-child(even) {
-        margin-bottom: 207px;
+        @media screen and (min-width: $tablet) {
+            justify-content: end;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 100%;
+        font-size: 200px;
+        height: 200px;
+
+        &:not(:first-child) {
+            margin-top: -22px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        height: 100%;
+        &:not(:first-child) {
+            margin-top: 0px;
+        }
+        &:first-child {
+            margin-left: 130px;
+        }
     }
 }
 
-.stages-list-action{
-    position: absolute;
-    top: 37%;
-    display: flex;
-    justify-content: flex-end;
+.stages-list-action {
+    margin-top: 63px;
     text-align: center;
-}
 
-.stages-list-action__item{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: $gap-primary;
-    width: 352px;
-    &:not(:last-child){
-        margin-right: -122px;
+    @media screen and (min-width: $tablet) {
+        margin-top: 133px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        height: 298px;
+        margin-top: 52px;
     }
 }
 
-.stages-list__title{
-    font-size: 16px;
-    color: $black-primary;
-    font-weight: 600;
-    text-transform: uppercase;
+.stages-list-action__item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 94px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        width: 352px;
+
+        &:nth-child(even) {
+            margin-left: auto;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 81px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        &:nth-child(even) {
+            margin: 0px;
+        }
+
+        &:nth-child(odd) {
+            justify-content: end;
+        }
+
+        &:not(:last-child) {
+            margin: 0px;
+        }
+
+        &:not(:first-child) {
+            margin-left: -120px;
+        }
+    }
 }
 
-.stages-list__text{
-    font-size: 14px;
+.stages-list__title {
+    margin-bottom: 12px;
+    font-size: $font-size-secondary;
+    color: $black-primary;
+    font-weight: $medium-second;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+    }
+}
+
+.stages-list__text {
+    line-height: $secondary2;
 }
 
 .stages-list__icon {
     position: absolute;
-    
+
+    @media screen and (min-width: $desktop) {
+        width: 112px;
+        height: 180px;
+    }
 }
 
 .first-icon {
-    height: 180px;
-    bottom: 122%;
-    left: 23%;
+    top: 0;
+    right: 155px;
+
+    @media screen and (min-width: $tablet) {
+        left: 292px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 12px;
+        left: 170px;
+    }
 }
 
-.second-icon{
-    top: 144%;
-    left: 24%;
-    height: 119px;
+.second-icon {
+    top: 0px;
+    transform: scaleX(-1);
+    left: 155px;
+
+    @media screen and (min-width: $tablet) {
+        left: -243px;
+    }
+    @media screen and (min-width: $desktop) {
+        transform: rotate(90deg);
+        left: 174px;
+        top: 77px;
+    }
 }
 
-.thirdery-icon{
-    bottom: 71%;
-    left: 57%;
-    height: 119px;
+.thirdery-icon {
+    top: 0;
+    right: 155px;
+
+    @media screen and (min-width: $tablet) {
+        left: 292px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 70px;
+        left: 299px;
+    }
 }
 
 .fourthery-icon {
-    top: 24%;
-    left: 60%;
-    height: 180px;
+    top: 0px;
+    transform: scaleX(-1);
+    left: 155px;
+
+    @media screen and (min-width: $tablet) {
+        left: -243px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        transform: rotate(360deg);
+        top: 13px;
+        left: 300px;
+    }
 }
 
+.stages-list__icon-mobile {
+    display: block;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.stages-list__icon-tablet {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.stages-list__icon-desktop {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+    }
+}
