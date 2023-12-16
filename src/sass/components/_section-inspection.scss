@@ -1,54 +1,62 @@
-.inspection{
+.inspection {
     padding: 52px 0px 52px;
 }
 
-.inspection-list{
+.inspection-list {
     display: flex;
     justify-content: space-between;
     margin: 52px 0px 52px;
 }
 
-.inspection-discription{
+.inspection-discription {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+    }
 }
 
-.inspection-wraper{
+.inspection-wraper {
     display: flex;
     width: 418px;
     height: 100%;
 }
 
-
-.inspection-discription__list{
-    width: 575px;
-}
-
-.inspection-discription__item{
+.inspection-discription__item {
     display: flex;
-    border-bottom: 1px solid $grey-bottom;
     justify-content: space-between;
+    border-bottom: 1px solid $grey-bottom;
     padding: 12px 0px 12px;
 
-    &:not(:last-child){
-        margin-bottom: 12px;
-    }
+    // &:not(:last-child) {
+    //     margin-bottom: 12px;
+    // }
 }
 
-.inspection-title{
+.inspection-discription__title {
     display: flex;
     align-items: center;
-    width: 193px;
-    height: 42px;
-    font-size: 16px;
+    margin-bottom: 12px;
+    font-size: $font-size-secondary;
     font-weight: $medium-second;
     text-transform: uppercase;
     color: $black-primary;
+    // width: 193px;
+    // height: 42px;
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+    }
 }
 
-.inspection-text {
+.inspection-discription__wraper {
+    display: flex;
+    flex-direction: column;
+}
+
+.inspection-discription__text {
     max-width: 302px;
-    font-size: 14px;
     font-weight: $regular;
     line-height: $secondary2;
     display: -webkit-box;
@@ -62,10 +70,11 @@
     display: flex;
 }
 
-.inspection-btn{
+.inspection-discription__btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 35px;
     width: 32px;
     height: 32px;
     border: none;
@@ -73,14 +82,21 @@
     transition: color $transition-duration;
 
     &:hover,
-    &:focus{
+    &:focus {
         color: $accent;
     }
-
 }
 
-.inspection-svg{
+.inspection-svg {
     width: 15px;
     height: 15px;
     fill: currentColor;
+}
+
+.inspection-svg__cross {
+    display: block;
+}
+
+.inspection-svg__minus {
+    display: none;
 }
