@@ -30,6 +30,11 @@
 
     &:not(:last-child){
         margin-bottom: 52px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 0px;
+        }
+
     }
 
     &:nth-child(odd) {
@@ -151,6 +156,11 @@
     width: 69px;
     height: 164px;
 
+    @media screen and (min-width: $tablet){
+        width: 112px;
+        height: 148px;    
+    }
+
     @media screen and (min-width: $desktop) {
         width: 112px;
         height: 180px;
@@ -162,7 +172,7 @@
     right: 263px;
 
     @media screen and (min-width: $tablet) {
-        left: 292px;
+        left: 392px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -177,8 +187,9 @@
     left: 267px;
 
     @media screen and (min-width: $tablet) {
-        left: -243px;
+        left: -148px;
     }
+
     @media screen and (min-width: $desktop) {
         transform: rotate(90deg);
         left: 174px;
@@ -191,7 +202,7 @@
     right: 263px;
 
     @media screen and (min-width: $tablet) {
-        left: 292px;
+        left: 392px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -206,7 +217,7 @@
     left: 267px;
 
     @media screen and (min-width: $tablet) {
-        left: -243px;
+        left: -148px;
     }
 
     @media screen and (min-width: $desktop) {
