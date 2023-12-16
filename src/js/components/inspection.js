@@ -14,12 +14,12 @@ inspectionBtns.forEach((btn, index) => {
     if (isExpanded) {
       textElement.classList.remove("expanded");
       cross.style.display = 'block';
-      minus.style.display = 'none'
+      minus.style.display = 'none';
 
     } else {
       textElement.classList.add("expanded");
       cross.style.display = 'none';
-      minus.style.display = 'block'
+      minus.style.display = 'block';
     }
   });
 });

@@ -2,6 +2,10 @@
     padding: 52px 0px 52px;
 }
 
+.inspection-gallery {
+    overflow: hidden;
+}
+
 .inspection-list {
     display: flex;
     justify-content: space-between;
@@ -20,8 +24,11 @@
 
 .inspection-wraper {
     display: flex;
-    width: 418px;
-    height: 100%;
+    width: 315px;
+
+    @media screen and (min-width: $tablet) {
+        width: 410px;
+    }
 }
 
 .inspection-discription__item {
@@ -29,10 +36,6 @@
     justify-content: space-between;
     border-bottom: 1px solid $grey-bottom;
     padding: 12px 0px 12px;
-
-    // &:not(:last-child) {
-    //     margin-bottom: 12px;
-    // }
 }
 
 .inspection-discription__title {
@@ -43,16 +46,22 @@
     font-weight: $medium-second;
     text-transform: uppercase;
     color: $black-primary;
-    // width: 193px;
-    // height: 42px;
+
     @media screen and (min-width: $tablet) {
         font-size: 16px;
+        width: 193px;
+        margin-bottom: 0px;
     }
 }
 
 .inspection-discription__wraper {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        align-items: flex-end;
+    }
 }
 
 .inspection-discription__text {
@@ -64,6 +73,10 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @media screen and (min-width: $tablet) {
+        margin-left: 24px;
+    }
 }
 
 .expanded {
@@ -84,6 +97,10 @@
     &:hover,
     &:focus {
         color: $accent;
+    }
+
+    @media screen and(min-width: $tablet) {
+        margin-top: 0px;
     }
 }
 

@@ -2,9 +2,10 @@ import Swiper from 'swiper';
 // import 'swiper/swiper-bundle.css';
 
 const widthDisplay = window.innerWidth >= 768;
+const widthMobilDisplay = window.innerWidth <= 768;
 
 if (widthDisplay) {
-    var swiperServices = new Swiper('.services-list-wraper', {
+    const swiperServices = new Swiper('.services-list-wraper', {
         slidesPerView: 'auto',
         spaceBetween: 20,
         allowTouchMove: true,
@@ -12,8 +13,6 @@ if (widthDisplay) {
         touchEventsTarget: 'services-list',
     });
 }
-
-const widthMobilDisplay = window.innerWidth <= 768;
 
 if (widthMobilDisplay) {
     const swiperQualities = new Swiper('.section-gallery', {
@@ -24,3 +23,11 @@ if (widthMobilDisplay) {
         touchEventsTarget: 'qualities-list',
     });
 }
+
+const swiperInspection = new Swiper('.inspection-gallery', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    allowTouchMove: true,
+    slideClass: 'inspection-slide',
+    touchEventsTarget: 'inspection-list',
+});
