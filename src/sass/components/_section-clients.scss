@@ -5,13 +5,14 @@
 }
 
 .clients-title{
-    padding-bottom: 36px;
-    margin-bottom: 36px;
     color: $black-primary;
-    font-size: 28px;
     font-weight: $medium-second;
     line-height: $pimary;
-    border-bottom: 1px $grey-bottom solid;
+    // border-bottom: 1px $grey-bottom solid;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 28px;
+    }
 }
 
 
