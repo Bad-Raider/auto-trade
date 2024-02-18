@@ -4,5 +4,7 @@
 import './js/components/inspection.js';
 // hero on all display
 import './js/components/heroOnAllDisplay.js';
-// swiper on page
+// swiper on pages
 import './js/components/swiper.js';
+// slider for clients sectioin
+import './js/components/sliderForClients';

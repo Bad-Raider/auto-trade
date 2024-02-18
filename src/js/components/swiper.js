@@ -31,3 +31,4 @@ const swiperInspection = new Swiper('.inspection-gallery', {
     slideClass: 'inspection-slide',
     touchEventsTarget: 'inspection-list',
 });
+
