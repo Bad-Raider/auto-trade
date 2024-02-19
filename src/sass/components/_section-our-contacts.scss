@@ -1,65 +1,168 @@
-.our-contacts{
-    padding-bottom: 193px;
-}
+.our-contacts {
+    padding-bottom: 241px;
 
-.container--relative{
-    position: relative;
-}
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 322px;
+    }
 
-.our-contacts-wraper-img{
-    width: 925px;
-    margin-top: 52px;
-    margin-left: -80px;
-    height: auto;
-    box-shadow: 0px 0px 48px 0px $black-shadow;
-}
-
-.our-contacts-wraper-card{
-    position: absolute;
-    top: 31%;
-    right: 7%;
-    display: flex;
-    flex-direction: column;
-    gap: $gap-primary;
-    padding: 52px 70px 52px 109px;
-    width: 620px;
-    background-color: $grey;
-}
-
-.our-contacts-wraper-card__title{
-    margin-bottom: 24px;
-    color: $black-primary;
-    font-size: 28px;
-    font-weight: $medium-second;
-    line-height: $secondary2;
-}
-
-.our-contacts-wraper-card__title--before{
-    &::before{
-        content: "";
-        height: 100%;
-        width: 100%;
-        background: url("../images/blue-heart.png") no-repeat;
-        display: block;
-        position: absolute;
-        top: 14%;
-        left: 73%;
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 182px;
     }
 }
 
-.our-contacts-wraper-card__title--instagram{
-    width: 671px;
-    margin-top: 100px;
-    margin-bottom: 52px;
+.container--relative {
+    position: relative;
 }
 
-.our-contacts-icon{
+.our-contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+        gap: 132px;
+    }
+}
+
+.our-contacts-wraper-img {
+    margin: 40px 0 0 -20px;
+    width: 355px;
+
+    @media screen and (min-width: $tablet) {
+        margin: 52px 0 0 -40px;
+        width: 704px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 817px;
+        margin-left: -80px;
+    }
+}
+
+.our-contacts-wrapper-info {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.our-contacts-wraper-card__title {
+    align-items: center;
+    gap: 12px;
+    margin: 40px 0 40px;
+    color: $black-primary;
+
+    font-size: $font-size-sixth;
+    font-weight: $medium-second;
+    line-height: $secondary2;
+
+    @media screen and (min-width: $tablet) {
+        font-size: $font-size-seventh;
+    }
+}
+.our-contacts--flex {
+    display: flex;
+}
+
+.our-contacts-after {
+    &::after {
+        content: '';
+        height: 24px;
+        width: 24px;
+        background: url('../images/blue-heart.png') no-repeat;
+        display: block;
+    }
+}
+
+.our-contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+.our-contacts-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+
+    @media screen and (min-width: $tablet) {
+        width: 322px;
+    }
+}
+
+.our-contacts-wraper-link {
+    @media screen and (min-width: $desktop) {
+        width: 737px;
+    }
+}
+
+.our-contacts-wraper-card__span {
+    color: $accent;
+}
+
+.our-contacts-icon {
     fill: currentColor;
 }
 
-
-.our-contacts-link{
+.our-contacts-arrow {
     position: absolute;
-    top: 78%;
-    left: 60%;
+    top: 104%;
+
+    @media screen and (min-width: $tablet) {
+        top: 106%;
+        left: 13%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 92%;
+        left: 41%;
+    }
+}
+
+.our-contacts-arrow-icon {
+    width: 130px;
+
+    @media screen and (min-width: $tablet) {
+        width: 260px;
+    }
+}
+
+.our-contacts-instagram-page {
+    position: absolute;
+    top: 104%;
+    left: 44%;
+
+    @media screen and (min-width: $tablet) {
+        left: 43%;
+        top: 92%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        left: 66%;
+        top: 78%;
+    }
+}
+
+.our-contacts-instagram-icon {
+    max-width: 213px;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 431px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 397px;
+    }
 }
