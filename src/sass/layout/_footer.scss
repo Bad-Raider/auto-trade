@@ -1,0 +1,139 @@
+.footer {
+    background-color: $black-primary;
+}
+
+.container--footer {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    @media screen and (min-width: $desktop) {
+    }
+}
+
+.footer-wraper {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+
+    @media screen and (min-width: $tablet) {
+        width: 112px;
+        height: 112px;
+    }
+}
+
+.footer-text {
+    margin-top: 44px;
+    width: 246px;
+    color: $white-primary-rgb;
+    font-weight: $medium;
+    line-height: $secondary2;
+
+    @media screen and (min-width: $tablet) {
+        width: 151px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 302px;
+    }
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: $gap-secondary;
+    font-weight: $medium-second;
+    line-height: $secondary2;
+
+    @media screen and (min-width: $tablet) {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 232px;
+    }
+}
+
+.footer-item {
+    font-size: $font-size-sixth;
+    color: $white-primary;
+    transition: $transition-duration;
+
+    &:hover,
+    &:focus {
+        color: $accent;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: $font-size-seventh;
+    }
+}
+
+.footer-wraper-creators {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 40px;
+    gap: $gap-primary;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 0px;
+        margin: 0 0 -60px auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 0px;
+        margin: 0 0 0 auto;
+    }
+
+}
+
+.footer-wraper-creators__item {
+    display: flex;
+    color: $white-primary-rgb;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.footer-data {
+    margin-top: 40px;
+    color: $white-primary-rgb;
+    font-size: 14px;
+    font-weight: $regular;
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 0;
+    }
+}
+
+.button-to-up {
+    position: absolute;
+    top: 87%;
+    left: 89%;
+    transform: rotate(270deg);
+    fill: $white-base;
+
+    @media screen and (min-width: $tablet) {
+        top: 69%;
+        left: 92%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 10%;
+        left: 94%;
+    }
+}
