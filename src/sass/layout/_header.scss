@@ -1,26 +1,37 @@
+.container--header {
+    padding: 0;
+    width: 100%;
+    background-color: $black-primary;
+
+}
+
 .header-wraper {
-    position: fixed;
-    top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto 0;
+    padding: 52px 20px 10px;
+
     gap: $gap-secondary;
     min-width: 320px;
 
-    background-color: $grey-background;
-    backdrop-filter: blur(2px);
     z-index: 100;
 
     @media screen and (min-width: $mobile) {
-        width: 335px;
+        width: $mobile - 2px;
         min-width: 0px;
     }
 
     @media screen and (min-width: $tablet) {
+        position: fixed;
+
         width: 664px;
         padding: 8px 20px;
+        top: 20px;
+        background-color: $grey-background;
+        backdrop-filter: blur(2px);
+
     }
 
     @media screen and (min-width: $desktop) {
@@ -32,7 +43,6 @@
         width: 1280px;
         padding: 11px 109px;
     }
-    
 }
 
 .header-nav {
@@ -55,6 +65,17 @@
     @media screen and (min-width: $tablet) {
         width: 56px;
         height: 56px;
+    }
+}
+
+.menu {
+    padding-right: 12px;
+    font-size: $font-size-sixth;
+    color: $white-primary;
+    transition: $transition-duration;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
     }
 }
 
