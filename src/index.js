@@ -1,5 +1,5 @@
-// Scroll-to-top button
-// import './js/components/btnBackToTop.js';
+// loader in the page
+import './js/loader.js';
 // Show full text in inspection section
 import './js/components/inspection.js';
 // hero on all display
