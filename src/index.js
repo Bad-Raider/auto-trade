@@ -6,5 +6,7 @@ import './js/components/inspection.js';
 import './js/components/heroOnAllDisplay.js';
 // swiper on pages
 import './js/components/swiper.js';
-// slider for clients sectioin
-import './js/components/sliderForClients';
+// slider for clients section
+import './js/components/sliderForClients.js';
+// all text for faq section
+import './js/components/allTextForFaqSection.js';

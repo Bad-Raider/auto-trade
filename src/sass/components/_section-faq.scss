@@ -1,4 +1,4 @@
-.container--faq{
+.container--faq {
     background-color: $black-primary;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -14,7 +14,7 @@
     }
 }
 
-.faq-wraper{
+.faq-wraper {
     display: flex;
     flex-direction: column;
 
@@ -24,23 +24,22 @@
     }
 }
 
-.section-title--faq{
+.section-title--faq {
     color: $white-primary;
     font-size: $font-size-seventh;
 
-    @media screen and (min-width:$tablet) {
+    @media screen and (min-width: $tablet) {
         font-size: $font-size-fourth;
     }
 }
 
-.section-title-word-faq{
+.section-title-word-faq {
     color: $white-primary-rgb;
 }
 
-.faq-text{
+.faq-text {
     margin-top: 40px;
     color: $white-primary-rgb;
-    font-size: 14px;
     font-weight: $regular;
     line-height: $secondary2;
 
@@ -49,7 +48,7 @@
     }
 }
 
-.faq-list{
+.faq-list {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -60,23 +59,38 @@
     }
 }
 
-.faq-item{
+.faq-item {
     display: flex;
-    justify-content: space-between;
+
     padding-bottom: 12px;
     align-items: center;
     border-bottom: 1px solid $grey-primary-rgb;
 }
 
-.faq-item__text{
+.faq-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.faq-item__title {
     color: $white-primary;
     font-weight: $medium-second;
 }
 
-.faq-icon{
+.faq-item__text {
+    display: none;
+    margin-top: 12px;
+    color: $white-primary-rgb;
+    font-weight: $regular;
+    line-height: $secondary2;
+
+}
+
+.faq-icon {
     color: $white-rgb;
     transition: color $transition-duration;
-    &:hover{
+    &:hover {
         color: $accent;
     }
     cursor: pointer;
