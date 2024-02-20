@@ -1,13 +1,36 @@
 .container--faq{
-    display: flex;
-    justify-content: space-between;
     background-color: $black-primary;
-    padding-top: 24px;
-    padding-bottom: 52px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.faq-wraper{
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .section-title--faq{
     color: $white-primary;
+    font-size: $font-size-seventh;
+
+    @media screen and (min-width:$tablet) {
+        font-size: $font-size-fourth;
+    }
 }
 
 .section-title-word-faq{
@@ -15,32 +38,39 @@
 }
 
 .faq-text{
-    margin-top: 36px;
-    width: 411px;
+    margin-top: 40px;
     color: $white-primary-rgb;
     font-size: 14px;
     font-weight: $regular;
     line-height: $secondary2;
+
+    @media screen and (min-width: $desktop) {
+        width: 411px;
+    }
 }
 
 .faq-list{
     display: flex;
     flex-direction: column;
-    margin-top: 121px;
+    margin-top: 40px;
     row-gap: 24px;
+
+    @media screen and (min-width: $desktop) {
+        width: 628px;
+    }
 }
 
 .faq-item{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 12px;
     align-items: center;
-    width: 628px;
-    height: 44px;
     border-bottom: 1px solid $grey-primary-rgb;
 }
 
 .faq-item__text{
     color: $white-primary;
+    font-weight: $medium-second;
 }
 
 .faq-icon{
