@@ -1,6 +1,4 @@
 .order {
-    // max-width: $desktop-wide;
-    // height: 512px;
     padding: 60px 0px;
     margin: 0px auto 0px;
     background-image: url(../images/section-order-mobile.jpg);
@@ -67,7 +65,7 @@
     }
 }
 
-.order-form__wraper {
+.order-form__wrapper {
     @media screen and (min-width: $tablet) {
         display: flex;
         gap: $gap-thirdery;
