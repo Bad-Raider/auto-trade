@@ -28,15 +28,23 @@
                     <a href="#section-contacts">Контакти</a>
                 </li>
             </ul>
-            <p class="menu">Меню</p>
-            <button class="header-burger-menu">
-                <svg width="24" height="24">
-                    <use
-                        href="../src/images/symbol-defs.svg#icon-burger-menu"
-                    ></use>
-                </svg>
-            </button>
         </nav>
+        <div class="wrapper-for-burger">
+            <p class="menu">Меню</p>
+            <div class="header-burger-menu">
+                <svg class="header-burger-menu-icon" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+                </svg>
+
+                <svg
+                    class="header-burger-menu-icon-cross"
+                    width="22"
+                    height="22"
+                >
+                    <use href="./images/symbol-defs.svg#icon-cross-min"></use>
+                </svg>
+            </div>
+        </div>
         <a href="tel: +380967593982" class="header-contacts"
             >Звʼязатися
             <svg class="header-contacts__icon" width="24" height="24">
@@ -47,3 +55,28 @@
         </a>
     </div>
 </header>
+
+<div class="mobile-menu">
+    <nav class="header-nav-mobile container">
+        <ul class="header-list-mobile">
+            <li class="header-list-item">
+                <a href="#section-about">Про нас</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#section-services">Послуги</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#section-inspection">Перевірка авто</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#section-clients">Відгуки</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#section-faq">Питання</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#section-contacts">Контакти</a>
+            </li>
+        </ul>
+    </nav>
+</div>

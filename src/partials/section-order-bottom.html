@@ -5,7 +5,11 @@
             Якщо у Вас є будь-які питання, ми будемо раді на них відповісти.
             Просто заповніть форму і ми звʼяжемося з Вами найближчим часом
         </p>
-        <form class="order-form order-form--bottom">
+        <form
+            class="order-form order-form--bottom"
+            method="POST"
+            action="../helpers/sendmail.php"
+        >
             <div class="order-form__wraper">
                 <label class="order-form__label">
                     <input

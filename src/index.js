@@ -10,3 +10,5 @@ import './js/components/swiper.js';
 import './js/components/sliderForClients.js';
 // all text for faq section
 import './js/components/allTextForFaqSection.js';
+// burger menu logic
+import './js/components/burgerMenu.js';

@@ -1,25 +1,23 @@
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-if(
-!empty($_POST['name'])
-&& !empty($_POST['email'])
-&& !empty($_POST['message'])
-){
-$name = $_POST["name"];
-$email = $_POST["email"];
-$phone = $_POST["phone"];
-$message = $_POST["message"];
+    // Отримання даних з форми
+    $name = $_POST['name'];
+    $phone = '+80' . $_POST['phone']; // Додавання коду країни до номеру телефону
 
+    // Адреса електронної пошти, на яку потрібно відправити повідомлення
+    $to = "stanislav.gusiev@gmail.com";
 
-$to = "your@email.com";
-$subject = "New Contact Form Submission";
-$body = "Name: {$name}\nEmail: {$email}\nPhone: {$phone}\nMessage: {$message}";
-$headers = "From: {$email}";
+    // Тема повідомлення
+    $subject = "Запит на підбір авто";
 
+    // Побудова тексту повідомлення
+    $email_body = "Ім'я: $name\n" .
+        "Телефон: $phone\n";
 
-if (mail($to, $subject, $body, $headers)) {
-echo "Message sent successfully!";
-} else {
-echo "Failed to send message.";
-}
-}
+    // Відправлення email
+    if (mail($to, $subject, $email_body)) {
+        echo "Повідомлення відправлено успішно!";
+    } else {
+        echo "Виникла помилка при відправленні повідомлення.";
+    }
 }

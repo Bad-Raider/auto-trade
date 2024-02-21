@@ -1,46 +1,46 @@
 /* My defaults */
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: $font-size-secondary;
-  font-weight: $regular;
-  color: $black-secondary;
-  background-color: $white-secondary;
-  overflow-x:hidden; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: $font-size-secondary;
+    font-weight: $regular;
+    color: $black-secondary;
+    background-color: $white-secondary;
+    overflow-x: hidden;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 a {
-  background-color: transparent;
-  text-decoration: none;
-  color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  cursor: pointer;
-  font-family: inherit;
-  text-align: center;
-  -webkit-user-select: none;
-  user-select: none;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 address {
-  font-style: normal;
+    font-style: normal;
 }
 
 img,
 picture,
 svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
