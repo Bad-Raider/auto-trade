@@ -1,8 +1,10 @@
 .container--header {
-    padding: 0;
-    width: 100%;
     background-color: $black-primary;
 
+    @media screen and (min-width: $mobile) and (max-width: 739.98px) {
+        padding: 0;
+        width: 100%;
+    }
 }
 
 .header-wraper {
@@ -31,7 +33,6 @@
         top: 20px;
         background-color: $grey-background;
         backdrop-filter: blur(2px);
-
     }
 
     @media screen and (min-width: $desktop) {
@@ -124,7 +125,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        align-items: flex-end;
         padding: 12px 12px;
         gap: $gap-primary;
         width: 193px;
