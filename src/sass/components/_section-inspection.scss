@@ -21,7 +21,7 @@
 .inspection-wraper {
     display: flex;
     width: 315px;
-    background-color: $grey-border;
+    background-color: $placeholder-color;
 
     @media screen and (min-width: $tablet) {
         width: 410px;

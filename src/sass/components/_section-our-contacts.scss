@@ -27,6 +27,7 @@
 .our-contacts-wraper-img {
     margin: 40px 0 0 -20px;
     width: 355px;
+    background-color: $placeholder-color;
 
     @media screen and (min-width: $tablet) {
         margin: 52px 0 0 -40px;

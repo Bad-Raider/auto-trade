@@ -12,3 +12,5 @@ import './js/components/sliderForClients.js';
 import './js/components/allTextForFaqSection.js';
 // burger menu logic
 import './js/components/burgerMenu.js';
+// hidden scroll
+import './js/components/hiddenHeader.js';

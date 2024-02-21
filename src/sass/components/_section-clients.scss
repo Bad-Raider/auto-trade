@@ -54,6 +54,7 @@
     margin-top: 40px;
     width: 335px;
     height: 339px;
+    background-color: $placeholder-color;
 
     @media screen and (min-width: $tablet) {
         width: 322px;
@@ -119,7 +120,7 @@
     border: none;
     background-color: $white-base;
 
-    &:disabled{
+    &:disabled {
         cursor: no-drop;
     }
 }
